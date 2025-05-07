@@ -1,0 +1,72 @@
+\documentclass{article}
+\usepackage{geometry}
+\geometry{a4paper}
+\usepackage{tikz}        
+\usepackage{xcolor}      
+\usepackage{graphicx}    
+
+\pagestyle{empty}
+\begin{document}
+
+
+    \begin{tikzpicture}[remember picture, overlay]
+        \fill[gray!8] (current page.north west) rectangle (current page.south east);
+    \end{tikzpicture}
+
+    \begin{tikzpicture}[remember picture, overlay]
+        \fill[black] (current page.north west) rectangle ([yshift=-3cm]current page.north east);
+        \node[anchor=north west, xshift=1cm, yshift=0.2cm] at (current page.north west) {\includegraphics[height=3.5cm]{images/ensias_logo_whiter.pdf}};
+        \node[anchor=north east, xshift=-1cm, yshift=0.5cm] at (current page.north east) {\includegraphics[height=3.5cm]{images/ProtecteDromeLogoBlack.pdf}};
+        \node[anchor=north, yshift=-1cm] at (current page.north) {\textbf{\Huge\color{white}Évaluation de l'obstacle}};
+    \end{tikzpicture}
+
+    \vspace{3cm}  
+
+
+    \noindent
+    \textbf{\LARGE Informations de l'Obstacle}
+    \begin{itemize}
+        \item \verb|Description  :| \textbf{description}
+        \item \verb|Latitude     :| \textbf{latitude}
+        \item \verb|Longitude    :|\textbf{longitude}
+        \item \verb|Altitude     :| \textbf{altitude}
+        \item \verb|Height       :| \textbf{height}
+    \end{itemize}
+
+    \noindent
+    \textbf{\LARGE Résultats du test sur les surfaces}
+    \newline
+    \textbf{Cote 03}
+    \begin{itemize}
+        \item \verb|Surface d'Approche               :| \textbf{@PenetrationTestResultApproche03}m
+        \item \verb|Surface de montée au décollage   :| \textbf{@PenetrationTestResultMonteAuDecolage03}m
+    \end{itemize}
+    \textbf{Cote 21}
+    \begin{itemize}
+        \item \verb|Surface d'Approche               :| \textbf{@PenetrationTestResultApproche21}m
+        \item \verb|Surface de montée au décollage   :| \textbf{@PenetrationTestResultMonteAuDecolage21}m
+    \end{itemize}
+    \textbf{Autres}
+    \begin{itemize}
+        \item \verb|Surface horizentale interieur    :| \textbf{@PenetrationTestResulthorizentaleinterieur}m
+        \item \verb|Surface conique                  :| \textbf{@PenetrationTestResulconique}m
+    \end{itemize}
+    \noindent
+    \textbf{\LARGE Résultats du test sur les outils de Radionavsigation et radiocommunications}
+
+    \begin{itemize}
+        \item \verb|DVOR    :| \textbf{@PenetrationTestResultDVOR}m
+        \item \verb|SSR     :| \textbf{@PenetrationTestResultSSR}m
+        \item \verb|DME     :| \textbf{@PenetrationTestResultDME}m
+        \item \verb|VHF TX  :| \textbf{@PenetrationTestResultVHFTX}m
+        \item \verb|VHF RX  :| \textbf{@PenetrationTestResultVHFRX}m
+    \end{itemize}
+
+    \begin{tikzpicture}[remember picture, overlay]
+        \fill[black] ([yshift=1.5cm]current page.south west) rectangle ([yshift=0cm]current page.south east);
+        \node[anchor=south west, yshift=0.4cm, xshift=1cm, font=\Large\bfseries\color{white}] at (current page.south west) {\today};
+        \node[anchor=south, yshift=0.5cm, font=\Large\bfseries\color{white}] at (current page.south) {AeroGuard};
+        \node[anchor=south east, yshift=0.5cm, xshift=-1cm, font=\Large\bfseries\color{white}] at (current page.south east) {ONDA};
+    \end{tikzpicture}
+
+\end{document}
