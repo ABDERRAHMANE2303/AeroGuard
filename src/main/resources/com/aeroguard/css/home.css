@@ -1,0 +1,39 @@
+#rootPane {
+    -fx-background-image: url("/com/aeroguard/images/HomeBackground.jpg");
+    -fx-background-size: cover;
+}
+
+#firstfog {
+    -fx-background-color: rgba(0, 0, 0, 0.6);
+}
+
+#secondfog {
+    -fx-background-color: rgba(0, 0, 0, 0.3);
+}
+
+#uppertext, #lowertext {
+    -fx-fill: rgb(255, 255, 255);
+    -fx-font-size: 28px; 
+    -fx-font-weight: bold;
+    -fx-text-alignment: center;
+    -fx-font-family: "Sans-serif"; 
+}
+
+#switchbutton {
+    -fx-background-color: rgba(32, 32, 232, 0.63); 
+    -fx-text-fill: white;
+    -fx-font-size: 16px;
+    -fx-pref-width: 150px;
+    -fx-pref-height: 40px;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-font-family: "Sans-serif"; 
+}
+
+#switchbutton:hover {
+    -fx-background-color: rgba(0, 0, 139, 1.0); 
+}
+
+#switchbutton:pressed {
+    -fx-background-color: rgba(0, 0, 139, 1.0);
+}

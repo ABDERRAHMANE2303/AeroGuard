@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.aeroguard.controllers.MainViewController">
+    <children>
+        <AnchorPane fx:id="RightSide1" layoutX="17.0" layoutY="35.0" prefHeight="650.0" prefWidth="890.0">
+         <children>
+                <HBox fx:id="HBoxSurfaces" alignment="CENTER" layoutY="13.0" prefHeight="60.0" prefWidth="910.0" spacing="20.0">
+                    <children>
+                        <Button fx:id="Switch" prefHeight="40.0" prefWidth="40.0" />
+                        <MenuButton fx:id="surfacePisteMenuButton" prefHeight="44.0" prefWidth="245.0" text="Surfaces du piste" textFill="WHITE">
+                            <items>
+                                <MenuItem fx:id="surfaceApprocheMenuItem" text="Surface d'approche (3 Sections)" />
+                                <MenuItem fx:id="surfaceMonteeDecolageMenuItem" text="Surface du montee au decolage" />
+                                <MenuItem fx:id="surfaceHorizentaleInterieurMenuItem" text="Surface horizentale interieur" />
+                                <MenuItem fx:id="surfaceConiqueMenuItem" text="Surface Conique" />
+                            </items>
+                        </MenuButton>
+                        <MenuButton fx:id="surfaceRadionavsMenuButton" prefHeight="44.0" prefWidth="263.0" text="Surfaces des radionavs" textFill="WHITE">
+                            <items>
+                                <MenuItem fx:id="vorMenuItem" text="VOR                  " />
+                                <MenuItem fx:id="dmeMenuItem" text="DME en Route" />
+                                <MenuItem fx:id="vhftxMenuItem" text="VHF Tx " />
+                                <MenuItem fx:id="VHFRxMenuItem" text="VHF Rx" />
+                                <MenuItem fx:id="ssrMenuItem" text="SSR" />
+                            </items>
+                        </MenuButton>
+      
+                          </children>
+                </HBox>
+                <StackPane fx:id="MapViewPane" layoutY="78.0" prefHeight="575.0" prefWidth="910.0" />
+         </children>
+        </AnchorPane>
+        <VBox layoutX="954.0" layoutY="35.0" prefHeight="650.0" prefWidth="300.0" spacing="8" styleClass="vbox">
+            <children>
+                <Label fx:id="VBoxTitle" alignment="CENTER" contentDisplay="CENTER" prefHeight="66.0" prefWidth="307.0" text="Informations de l'obstacle">
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+                </Label>
+                <Label text="Description" />
+                <TextField fx:id="DescriptionField" prefHeight="25.0" prefWidth="180.0" />
+                <Label text="Longitude" />
+                <TextField fx:id="longitudeField" prefHeight="25.0" prefWidth="180.0" />
+                <Label text="Latitude" />
+                <TextField fx:id="latitudeField" prefHeight="25.0" prefWidth="180.0" />
+                <Label text="Altitude" />
+                <TextField fx:id="altitudeField" prefHeight="25.0" prefWidth="180.0" />
+                <Label text="Height" />
+                <TextField fx:id="heightField" prefHeight="25.0" prefWidth="180.0" />
+                <HBox fx:id="HBoxButton" alignment="CENTER" prefHeight="50.0" prefWidth="200.0">
+                    <children>
+                        <Button fx:id="generateReportButton" text="Generer le rapport">
+                            <HBox.margin>
+                                <Insets top="35.0" />
+                            </HBox.margin>
+                        </Button>
+                    </children>
+                </HBox>
+            </children>
+        </VBox>
+    </children>
+</AnchorPane>

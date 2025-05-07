@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.aeroguard.controllers.HomeController">
+   <children>
+      <!-- Root StackPane with background image -->
+      <StackPane fx:id="rootPane" prefHeight="720.0" prefWidth="1280.0">
+         <children>
+            <AnchorPane id="firstfog" fx:id="overlayPane" prefHeight="720" prefWidth="1280">
+               <children>
+                  <AnchorPane fx:id="secondfog" layoutX="-3.0" layoutY="170.0" prefHeight="150.0" prefWidth="1290.0">
+                     <children>
+                        <Text fx:id="uppertext" layoutX="3.0" layoutY="51.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Votre Sécurité, Notre Engagement" textAlignment="CENTER" wrappingWidth="1280.0" />
+                        <Text fx:id="lowertext" layoutX="6.0" layoutY="89.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Votre Outil de Confiance pour Surveiller l’Espace Aérien" textAlignment="CENTER" wrappingWidth="1280.0" />
+                     </children>
+                  </AnchorPane>
+                  <Button fx:id="switchbutton" layoutX="604.0" layoutY="603.0" text="Commencer" />
+               </children>
+            </AnchorPane>
+         </children>
+      </StackPane>
+   </children>
+</AnchorPane>

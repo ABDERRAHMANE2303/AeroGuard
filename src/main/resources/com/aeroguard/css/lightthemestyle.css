@@ -1,0 +1,103 @@
+/* light theme */
+
+.root {
+    -fx-background-color: white;
+}
+
+.vbox {
+    -fx-background-color: #ffffff; 
+    -fx-padding: 20px;
+    -fx-border-radius: 8px;
+    -fx-background-radius: 8px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 10, 0.5, 0, 4);
+}
+
+.button {
+    -fx-background-color: #3498db;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-padding: 10px;
+    -fx-background-radius: 5px;
+    /* -fx-border-radius: 5px;
+    -fx-margin-top: 20px; */
+}
+
+.button:hover {
+    -fx-cursor: hand;
+    -fx-background-color: #2a7bbd; 
+    -fx-scale-x: 1.05;
+    -fx-scale-y: 1.05;
+}
+
+.button:pressed {
+    -fx-background-color: #1f5f92; 
+    -fx-scale-x: 1.1;
+    -fx-scale-y: 1.1;
+}
+
+
+#RightSide1{
+    -fx-border-radius: 8px;
+    -fx-background-radius: 8px;
+    -fx-background-color: white;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 10, 0.5, 0, 4)
+}
+
+#HBoxSurfaces{
+    -fx-background-color: #ffffff;
+    /* -fx-background-color: rgba(170,211,223,255); */
+}
+
+#Switch {
+    -fx-background-color: linear-gradient(to bottom, #ffec99, #ffcc33); 
+    -fx-background-radius: 50%;
+    -fx-border-radius: 50%;
+    -fx-effect: dropshadow(three-pass-box, rgba(255, 223, 0, 0.6), 10, 0.3, 0, 0); 
+    -fx-transition: -fx-background-color 0.3s, -fx-effect 0.3s;
+}
+
+#Switch:hover {
+    -fx-background-color: radial-gradient(center 30% 30%, radius 60%, #ff8000, #d1a300); 
+}
+
+#Switch:pressed {
+    -fx-background-color: radial-gradient(center 30% 30%, radius 60%, #ff8000, #d1a300); 
+}
+
+
+
+.menu-button {
+    -fx-background-color: #007BFF;
+    -fx-border-color: #007BFF;
+    -fx-border-width: 2px;
+    -fx-border-radius: 5px;
+    -fx-padding: 5 10;
+    -fx-font-size: 14px;
+}
+
+
+.menu-button:hover {
+    -fx-background-color: #0056b3;
+    -fx-border-color: #0056b3;
+    -fx-cursor: hand;
+
+}
+
+
+
+.menu-button .menu {
+    -fx-background-color: #007BFF;
+    -fx-border-color: #007BFF;
+    -fx-border-width: 2px;
+    -fx-border-radius: 5px;
+}
+
+.menu-button .menu .menu-item {
+    -fx-background-color: #007BFF;
+    -fx-padding: 5 10;
+    -fx-font-size: 14px;
+}
+
+.menu-button .menu .menu-item:hover {
+    -fx-background-color: #0056b3;
+}

@@ -1,0 +1,104 @@
+/* light theme */
+
+.root {
+    -fx-background-color: #121212;
+}
+
+.label{
+    -fx-text-fill: white;
+}
+
+.vbox {
+    -fx-background-color: #1E1E1E; 
+    -fx-padding: 20px;
+    -fx-border-radius: 8px;
+    -fx-background-radius: 8px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 10, 0.5, 0, 4);
+}
+
+.button {
+    -fx-background-color: #FF4C4C; 
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-padding: 10px;
+    -fx-background-radius: 5px;
+    /* -fx-border-radius: 5px;
+    -fx-margin-top: 20px; */
+}
+
+.button:hover {
+    -fx-cursor: hand;
+    -fx-background-color: #CC0000; 
+    -fx-scale-x: 1.05;
+    -fx-scale-y: 1.05;
+}
+
+.button:pressed {
+    -fx-background-color: #cc0000cf; 
+    -fx-scale-x: 1.1;
+    -fx-scale-y: 1.1;
+}
+
+
+#RightSide1{
+    -fx-border-radius: 10px;
+    -fx-background-color: #1E1E1E;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.7), 10, 0.7, 0, 0);
+}
+
+#Switch {
+    -fx-background-color: radial-gradient(center 30% 30%, radius 60%, #c0c0c0, #4f4f4f); /* Moon-like gradient */
+    -fx-background-radius: 50%;
+    -fx-border-radius: 50%;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 5, 0.3, 0, 2); /* Soft moon glow */
+}
+
+#Switch:hover {
+    -fx-background-color: radial-gradient(center 30% 30%, radius 60%, #b0b0b0, #3e3e3e); /* Slightly darker gradient on hover */
+}
+
+#Switch:pressed {
+    -fx-background-color: radial-gradient(center 30% 30%, radius 60%, #a0a0a0, #303030); /* Even darker on click */
+}
+
+
+/* Style for MenuButton */
+.menu-button {
+    -fx-background-color: #FF4C4C;
+    -fx-border-color: #FF4C4C;
+    -fx-border-width: 2px;
+    -fx-border-radius: 5px;
+    -fx-padding: 5 10;
+    -fx-font-size: 14px;
+}
+
+/* Hover effect for MenuButton */
+.menu-button:hover {
+    -fx-background-color:  #CC0000;
+    -fx-border-color:  #CC0000;
+    -fx-cursor: hand;
+
+}
+
+
+/* Style for MenuButton's pop-up menu */
+.menu-button .menu {
+    -fx-background-color: #FF4C4C;
+    -fx-border-color: #FF4C4C;
+    -fx-border-width: 2px;
+    -fx-border-radius: 5px;
+}
+
+/* Style for MenuItems in the MenuButton's pop-up menu */
+.menu-button .menu .menu-item {
+    -fx-text-fill: black;
+    -fx-background-color: #ff0202;
+    -fx-padding: 5 10;
+    -fx-font-size: 14px;
+}
+
+/* Hover effect for MenuItems */
+.menu-button .menu .menu-item:hover {
+    -fx-background-color: #ff0202;
+    -fx-text-fill: white;
+}
